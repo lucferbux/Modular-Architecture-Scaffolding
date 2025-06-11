@@ -161,14 +161,14 @@ The architecture uses a layered configuration approach:
 ```bash
 # Container and Build Configuration
 CONTAINER_TOOL=docker|podman
-IMG_UI=ghcr.io/kubeflow/model-registry/ui:latest
-IMG_UI_STANDALONE=ghcr.io/kubeflow/model-registry/ui-standalone:latest
+IMG_UI=ghcr.io/kubeflow/modular-architecture/ui:latest
+IMG_UI_STANDALONE=ghcr.io/kubeflow/modular-architecture/ui-standalone:latest
 PLATFORM=linux/amd64
 
 # Deployment Configuration
 DEPLOYMENT_MODE=standalone|integrated
 BFF_API_VERSION=v1
-URL_PREFIX=/model-registry
+URL_PREFIX=/modular-architecture
 ```
 
 ### Configuration Files

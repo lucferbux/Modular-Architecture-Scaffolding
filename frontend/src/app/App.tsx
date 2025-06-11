@@ -22,8 +22,7 @@ import {
   useNamespaceSelector,
 } from 'mod-arch-shared';
 import AppRoutes from './AppRoutes';
-import { AppContext } from './AppContext';
-import { ModelRegistrySelectorContextProvider } from './context/ModelRegistrySelectorContext';
+import { AppContext } from './context/AppContext';
 import 'mod-arch-shared/style/MUI-theme.scss';
 import AppNavSidebar from './AppNavSidebar';
 
@@ -115,9 +114,7 @@ const App: React.FC = () => {
         isManagedSidebar={!isIntegrated}
         sidebar={!isIntegrated ? <AppNavSidebar /> : sidebar}
       >
-        <ModelRegistrySelectorContextProvider>
-          <AppRoutes />
-        </ModelRegistrySelectorContextProvider>
+        <AppRoutes />
         <ToastNotifications />
       </Page>
     </AppContext.Provider>

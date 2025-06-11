@@ -3,15 +3,9 @@ import {
   handleRestFailures,
   Namespace,
   UserSettings,
-  ModelRegistryKind,
-  assembleModArchBody,
   isModArchResponse,
-  restCREATE,
-  restDELETE,
   restGET,
-  restPATCH,
 } from 'mod-arch-shared';
-import { ModelRegistry } from '~/app/types';
 import { BFF_API_VERSION, URL_PREFIX } from '~/app/utilities/const';
 
 export const getUser =

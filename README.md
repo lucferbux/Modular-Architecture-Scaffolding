@@ -39,14 +39,14 @@ The following environment variables are used to configure the deployment and dev
 ### `IMG_UI`
 
 * **Description**: Specifies the image name and tag for the UI (with BFF).
-* **Default Value**: `ghcr.io/kubeflow/model-registry/ui:latest`
-* **Example**: `IMG_UI=ghcr.io/kubeflow/model-registry/ui:latest`
+* **Default Value**: `ghcr.io/kubeflow/modular-architecture/ui:latest`
+* **Example**: `IMG_UI=ghcr.io/kubeflow/modular-architecture/ui:latest`
 
 ### `IMG_UI_STANDALONE`
 
 * **Description**: Specifies the image name and tag for the UI (with BFF) in **standalone mode**, used for local kind deployment.
-* **Default Value**: `ghcr.io/kubeflow/model-registry/ui-standalone:latest`
-* **Example**: `IMG_UI_STANDALONE=ghcr.io/kubeflow/model-registry/ui-standalone:latest`
+* **Default Value**: `ghcr.io/kubeflow/modular-architecture/ui-standalone:latest`
+* **Example**: `IMG_UI_STANDALONE=ghcr.io/kubeflow/modular-architecture/ui-standalone:latest`
 
 ### `PLATFORM`
 
@@ -66,8 +66,8 @@ Here is an example of what your `.env.local` file might look like:
 
 ```shell
 CONTAINER_TOOL=docker
-IMG_UI=quay.io/<personal-registry>/model-registry-ui:latest
-IMG_UI_STANDALONE=quay.io/<personal-registry>/model-registry-ui-standalone:latest
+IMG_UI=quay.io/<personal-registry>/modular-architecture-ui:latest
+IMG_UI_STANDALONE=quay.io/<personal-registry>/modular-architecture-ui-standalone:latest
 PLATFORM=linux/amd64
 ```
 

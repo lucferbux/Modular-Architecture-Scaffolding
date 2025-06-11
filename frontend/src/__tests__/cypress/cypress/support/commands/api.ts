@@ -160,7 +160,7 @@ Cypress.Commands.add(
     return cy.intercept(
       {
         method,
-        pathname: `/model-registry/${pathname}`,
+        pathname: `/modular-architecture/${pathname}`,
         query: options?.query,
         ...(options?.times && { times: options.times }),
       },

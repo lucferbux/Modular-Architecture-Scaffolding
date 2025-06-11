@@ -43,7 +43,7 @@ First you need to set up your new image
 
 ```shell
 cd manifests/kustomize/options/ui/base
-kustomize edit set image model-registry-ui=${IMG_UI_STANDALONE}
+kustomize edit set image modular-architecture-ui=${IMG_UI_STANDALONE}
 ```
 
 Now you can set the namespace to kubeflow and apply the manifests:
@@ -62,7 +62,7 @@ kubectl get pods -n kubeflow
 
 ```shell
 NAME                                  READY   STATUS    RESTARTS   AGE
-model-registry-ui-58755c4754-zdrnr    1/1     Running   0          11s
+modular-architecture-ui-58755c4754-zdrnr    1/1     Running   0          11s
 ```
 
 ### 5. Access the Model Registry UI running in the cluster
@@ -72,7 +72,7 @@ Now that the pods are up and running you can access the UI.
 First you will need to port-forward the UI service by running the following in it's own terminal:
 
 ```shell
-kubectl port-forward service/model-registry-ui-service 8080:8080 -n kubeflow
+kubectl port-forward service/modular-architecture-ui-service 8080:8080 -n kubeflow
 ```
 
 You can then access the UI running in your cluster locally at http://localhost:8080/
@@ -80,7 +80,7 @@ You can then access the UI running in your cluster locally at http://localhost:8
 You can now make API requests to the BFF endpoints like:
 
 ```shell
-curl http://localhost:8080/api/v1/model-registry
+curl http://localhost:8080/api/v1/modular-architecture
 ```
 
 ```json

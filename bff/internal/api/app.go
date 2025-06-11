@@ -24,7 +24,7 @@ import (
 const (
 	Version = "1.0.0"
 
-	PathPrefix                    = "/model-registry"
+	PathPrefix                    = "/modular-architecture"
 	ApiPathPrefix                 = "/api/v1"
 	ModelRegistryId               = "model_registry_id"
 	RegisteredModelId             = "registered_model_id"

@@ -13,7 +13,7 @@ const AUTH_HEADER = process.env.AUTH_HEADER || 'kubeflow-userid';
 const KUBEFLOW_USERNAME = process.env.KUBEFLOW_USERNAME || 'user@example.com';
 const IMAGE_DIR = process.env.IMAGE_DIR || 'images';
 const LOGO_LIGHT = process.env.LOGO || 'logo-light-theme.svg';
-const URL_PREFIX = '/app';
+const URL_PREFIX = '/modular-architecture';
 const BFF_API_VERSION = 'v1';
 
 export {
